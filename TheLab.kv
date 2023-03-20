@@ -1,0 +1,25 @@
+BoxLayoutExample:
+
+<BoxLayout>:
+    orientation: "vertical"
+    Button:
+        text: "A"
+        size_hint: .5, .5 #proportion or width and height
+        #size_hint: None, None - normal size prop works when setting hint to none
+        pos_hint: {"center_x": .5}#x, center_x, right -- y, center_y, top
+    Button:
+        text: "B"
+    Button:
+        text: "C"
+
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: "100dp", "80dp"
+        pos: "100dp", "200dp"
+        color: 0, 0, 1, 1
+    Label:
+        text: "Hello2"
+        size: "100dp", "80dp"
+        pos: "200dp", "300dp"
+        color: 1, 0, 0, 1
